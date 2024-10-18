@@ -1,0 +1,8 @@
+*.cont
+*.abundances
+*.emergent_elin
+*.intrinsic_elin
+*.lines
+*.out
+*.ovr
+*.sed
