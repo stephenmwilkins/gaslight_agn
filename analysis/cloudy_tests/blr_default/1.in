@@ -1,0 +1,15 @@
+table SED "1.sed" 
+abundances "solar_GASS10.abn"
+ionization parameter = -1.0
+cosmic rays, background
+hden 10.0 log
+iterate to convergence
+set temperature floor 100 linear
+stop temperature 500K
+stop efrac -2
+save overview  "1.ovr" last
+save last abundances "1.abundances"
+save last continuum "1.cont" units Angstroms
+save line list column absolute last units angstroms "1.intrinsic_elin" "linelist.dat"
+save line list emergent column absolute last units angstroms "1.emergent_elin" "linelist.dat"
+save last lines, array "1.lines" units Angstroms no clobber
